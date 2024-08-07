@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-child"> 
+            <div class="question-head">
+                <h1>Where in the world?</h1>
+            </div>
+            <div class="theme">
+                <div class="dark">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="light none">
+                    <i class="fa-regular fa-moon"></i>
+                    <span>Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main-child">
+            <div class="input">
+                <div class="input-child">
+
+                    <div class="magnifying">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" id="input" placeholder="Search for a country...">
+                </div>
+                <div class="drop-down">
+                    <div class="divs-main">Filter by Region
+                        <div class="down" onclick="hider()"><i class="fa-solid fa-angle-down"></i></div>
+                        <div class="up none" onclick="unHider()"><i class="fa-solid fa-angle-up"></i></i></div>
+                    </div>
+                    <div class="ch none">
+
+                        <div class="divs">Africa</div>
+                        <div class="divs">Europe</div>
+                        <div class="divs">America</div>
+                        <div class="divs">Asia</div>
+                        <div class="divs">Oceania</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <!-- <div class="cart">
+                    <div class="imge">
+                        <img src="https://flagcdn.com/w320/de.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="title-head">
+                          <h2> Germany</h2>
+                        </div>
+                        <div class="band">
+
+                            <div class="population">population: <span class="pop-info"></span></div>
+                            <div class="region">Region: <span class="reg-info"></span> </div>
+                            <div class="capital">Capital: <span class="cap-info"></span></div>
+                        </div>
+                    </div>
+                 </div> -->
+
+            </div>
+            <!-- <div class="detailing-con"> -->
+                
+                <!-- <div class="back"><i class="fa-solid fa-arrow-left"></i> Back</div> -->
+                <!-- <div class="con-child">
+                    <div class="con-img">
+                        <img src="https://flagcdn.com/w320/de.png" alt="">
+                    </div>
+                    <div class="con-text">
+                        <div class="con-name">
+                            <h1>Belgium</h1>
+                        </div>
+                        <div class="lis">
+                            <div class="lis-childs">
+                                <div class="native-name">Native Name:</div>
+                                <div class="population-con">Population:</div>
+                                <div class="region-con">Region:</div>
+                                <div class="sub-region">Sub Region:</div>
+                                <div class="Capital">Capital:</div>
+                            </div>
+                            <div class="lis-childs">
+                                <div class="top-level-Domain">Top Level Domains:</div>
+                                <div class="currencies">Currencies:</div>
+                                <div class="languages">Languages:</div>
+                            </div>
+                        </div>
+                        <div class="border-countries">
+                            <span>Border Countries:</span>
+                            <div class="border-name">india</div>
+                            <div class="border-name">pakistan</div>
+                            <div class="border-name">china</div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+
+        </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

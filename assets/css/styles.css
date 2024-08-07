@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Tegomin&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Blue-Dark-Mode-Elements: hsl(209, 23%, 22%);
+    --Very-Dark-Blue-Dark-Mode-Background: hsl(207, 26%, 17%);
+    --Very-Dark-Blue-Light-Mode-Text: hsl(200, 15%, 8%);
+    --Dark-Gray-Light-Mode-Input: hsl(0, 0%, 52%);
+    --Very-Light-Gray-Light-Mode-Background: hsl(0, 2%, 89%);
+    --White-Dark-Mode-Text-Light-Mode-Elements: hsl(0, 0%, 100%);
+    --placeholder-light: hsl(200, 15%, 8%);
+    --placeholder-dark: hsl(0, 0%, 100%);
+
+}
+
+body {
+    font-family: 'nunito sans', sans-serif;
+    background-color: var(--Very-Dark-Blue-Dark-Mode-Background)
+}
+
+.light-body {
+    background-color: var(--Very-Light-Gray-Light-Mode-Background);
+}
+
+.light-element {
+    color: var(--Very-Dark-Blue-Light-Mode-Text);
+    background-color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+}
+
+/* ======================================
+NAV
+====================================== */
+nav {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+    background-color: var(--Dark-Blue-Dark-Mode-Elements)
+}
+
+.nav-child {
+    padding-block: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-head h1 {
+    font-size: clamp(20px, 3vw, 25px);
+    font-weight: bolder;
+
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* ======================================
+NAV END
+====================================== */
+/* ======================================
+MAIN
+====================================== */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-child {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(4, 20%); */
+}
+
+.input {
+    width: 100%;
+    padding-block: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input-child {
+    border-radius: 3px;
+
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 20px;
+    width: 30%;
+    align-items: center;
+    height: 50px;
+    /* padding-block: 15px; */
+    /* padding-inline: 30px */
+    /* background-color: ; */
+}
+
+.magnifying {
+    font-size: clamp(13px, 2vw, 15px);
+    /* color: rgba(0, 0, 0, 0.529); */
+    color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magnifying:hover {
+    cursor: pointer;
+}
+
+#input {
+    height: 100%;
+    font-family: 'nunito sans', sans-serif;
+    /* background-color: var(--Dark-Blue-Dark-Mode-Elements); */
+    /* color: rgba(0, 0, 0, 0.529);
+     */
+    /* color: var(--White-Dark-Mode-Text-Light-Mode-Elements); */
+    border: none;
+    font-size: clamp(13px, 2vw, 15px);
+    width: 85%;
+}
+
+::placeholder {
+    color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+}
+
+#input:focus {
+    border: none;
+    outline: none;
+}
+
+.drop-down {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+}
+
+.ch {
+    padding-block: 20px;
+    position: absolute;
+    top: 60px;
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+    width: 100%;
+}
+
+.divs {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.divs:hover{
+    background-color: var(--Very-Dark-Blue-Dark-Mode-Background);
+    color: white;
+}
+.divs:active {
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+}
+
+.divs-main {
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+    padding-inline: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    cursor: default;
+}
+
+.down {
+    cursor: pointer;
+}
+
+
+/* ======================================
+grid
+====================================== */
+.cart {
+    height: 90%;
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+    border-radius: 6px;
+
+}
+
+.cart:hover {
+    background-color: var(--Very-Dark-Blue-Dark-Mode-Background);
+    cursor: pointer;
+}
+
+.cart:active {
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-block: 20px;
+    padding-inline: 25px;
+    gap: 10px;
+}
+
+.band {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.imge {
+    width: 100%;
+    height: 45%;
+}
+
+.imge img {
+    height: 100%;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    width: 100%;
+}
+
+.title-head h2 {
+    font-size: clamp(18px, 2vw, 20px);
+}
+
+.pop-info,
+.reg-info,
+.cap-info {
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: 200;
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+/* ======================================
+grid END
+====================================== */
+/* ======================================
+DETAILING 
+====================================== */
+.detailing-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    padding-block: 100px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.back {
+    display: flex;
+    box-shadow: 2px 5px 30px var(--Very-Dark-Blue-Light-Mode-Text);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    gap: 15px;
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+    padding-block: 10px;
+    padding-inline: 30px;
+    font-weight: 200;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.63);
+    cursor: pointer;
+}
+
+.back:hover {
+    background-color: var(--Very-Dark-Blue-Dark-Mode-Background);
+}
+
+.back:active {
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+}
+
+.back span {
+    /* color: rgb(0, 0, 0); */
+    font-weight: 700;
+}
+
+/* .back
+{
+    
+    font-weight: 200px;
+} */
+.con-child {
+    width: 100%;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(2, minmax(200px, 50%));
+}
+
+.con-img {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.con-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.con-text {
+    padding-block: 50px;
+    /* padding-left: 50px; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lis-childs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.border-countries {
+    display: flex;
+    /* justify-content:space-between; */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.border-name {
+    padding-block: 6px;
+    padding-inline: 15px;
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+    border-radius: 4px;
+    box-shadow: 2px 5px 30px var(--Very-Dark-Blue-Light-Mode-Text);
+}
+
+.nat {
+    color: rgba(255, 255, 255, 0.427);
+    font-weight: 200;
+}
+
+/* ======================================
+DETAILING END
+====================================== */
+/* ======================================
+MAIN END
+====================================== */
+.none {
+    display: none;
+}
+
+/* ======================================
+    dark light mode
+    ====================================== */
+.dark {
+    color: hsl(0deg 0% 100% / 84%);
+    cursor: pointer;
+}
+
+.dark:hover {
+    color: hsla(0, 0%, 100%, 0.47);
+}
+
+.dark:active {
+    color: hsl(0deg 0% 100% / 84%);
+}
+
+.light {
+    color: hsl(200deg 15% 8%);
+    cursor: pointer;
+}
+
+.light:hover {
+    color: hsla(200, 15%, 8%, 0.502);
+}
+
+.light:active {
+    color: hsl(200deg 15% 8% / 99%);
+}
+
+.color-light {
+    background-color: rgb(238, 247, 255);
+    color: var(--Very-Dark-Blue-Light-Mode-Text);
+}
+
+.light-light-text {
+    color: hsl(200, 15%, 8%);
+}
+
+.input-dark {
+    background-color: var(--Dark-Blue-Dark-Mode-Elements);
+    color: hsl(0deg 0% 100% / 84%);
+
+}
+
+.for-light-elements {
+    color: var(--Very-Dark-Blue-Light-Mode-Text);
+    background-color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+}
+
+.for-light-elements:hover {
+    color: var(--Very-Dark-Blue-Light-Mode-Text);
+    background-color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+
+}
+
+.for-borders {
+    /* background-color:; */
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+    background-color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+}
+
+/* ======================================
+    dark light mode end
+    ====================================== */
+/* ======================================
+medias
+====================================== */
+
+@media (min-width:767px) and (max-width:1026px) {
+    .main-child {
+        width: 90%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    }
+
+    .drop-down {
+        width: 30%;
+    }
+
+    .input-child {
+        width: 70%;
+    }
+
+    .con-child {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:430px) {
+    .main-child {
+        width: 90%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 85%;
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .drop-down {
+        width: 60%;
+        
+    }
+    .down{
+        font-size: 12px;
+        font-weight: 100;
+    }
+    
+    .divs-main {
+        font-size: 14px;
+        padding-inline: 20px;
+        border-radius: 5px;
+        /* border-radius: 8px; */
+        font-weight: 200;
+    }
+#input{
+    font-size: 15px;
+}
+    .input-child {
+        gap: 2px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    nav{
+        height: 10vh;
+    }
+    .question-head h1{
+        font-size: 16px;
+    }
+    .theme{
+        font-size: 14px;
+    }
+    .con-child{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .lis{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .lis-childs{
+        gap: 12px;
+    }
+}
